@@ -8,7 +8,12 @@ public class Auto extends Vehiculo{
         // llamamos al constructor de la clase padre (vehiculo) de la cual Auto hereda. Esto permite pasar los argumentos de Vehiculo a constructor de la clase base Auto.
         // de esta manera reutilizamos codigo del constructor padre, y evitamos duplicar la logica que inicializa esos campos comunes
         super(id,patente,marca,modelo,color); // Llama al constructor de la clase Vehiculo
-        this.cantidadPuertas = cantidadPuertas;
+
+        if(cantidadPuertas == 0){
+            this.cantidadPuertas = 1; // indico que no se puede tener 0 puertas, el minimo es 1
+        }else{
+            this.cantidadPuertas = cantidadPuertas;
+        }
     }
 
     // SETTER
