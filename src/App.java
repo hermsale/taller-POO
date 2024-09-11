@@ -53,14 +53,15 @@ public class App {
         // 1. Recorriendo la lista con un for - manera tradicional
         for (Auto auto : autos) {
             System.out.println(auto.toString());
+            // System.out.println(auto.getCantidadPuertas());
         }
         // 2. Usando forEarch - utilizando referencia de método 
-        autos.forEach(System.out::println);
+        autos.forEach(System.out::println); 
 
-        // 3. usando forEach - utilizando expresion lambda
-        autos.forEach(auto -> System.out.println(auto));
+        // 3. usando forEach - utilizando expresion lambda - elegimos el metodo a imprimir
+        autos.forEach(auto -> System.out.println(auto.imprimirDatosCompleto()));
 
-        
+
 
     }
 }

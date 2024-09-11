@@ -37,4 +37,8 @@ public class Auto extends Vehiculo{
         // hay que indicar super a los atributos del padre
         return "Patente: "+ super.getPatente() +"marca: " + super.getMarca() + " modelo: " + super.getModelo() + " color: "+super.getColor();
     }
+
+    public String imprimirDatosCompleto(){
+        return "ID "+super.getId()+" Patente: "+ super.getPatente() +" marca: " + super.getMarca() + " modelo: " + super.getModelo() + " color: "+super.getColor()+" Cantidad puertas "+getCantidadPuertas();
+    }
 }
