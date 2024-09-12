@@ -10,10 +10,6 @@ public abstract class Vehiculo {
     private String patente;
     private String color;
 
-    public Vehiculo(){
-
-    }
-
     // Validaciones en el constructor
     // Conviene validar en el constructor cuando queres asegurarte de que no se creen objetos invalidos desde el principio
     // defino el constructor

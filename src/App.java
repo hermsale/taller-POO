@@ -61,7 +61,10 @@ public class App {
         // 3. usando forEach - utilizando expresion lambda - elegimos el metodo a imprimir
         autos.forEach(auto -> System.out.println(auto.imprimirDatosCompleto()));
 
-
+        // opcion: 1 - modelo . opcion: 2 - marca
+        System.out.println(autoUno.imprimirDato(1)); 
+        System.out.println(autoUno.imprimirDato(2)); 
+        System.out.println(autoUno.imprimirDato(3)); //enviamos aproposito un dato no valido
 
     }
 }

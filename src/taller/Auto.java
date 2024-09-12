@@ -46,4 +46,15 @@ public class Auto extends Vehiculo{
     public String imprimirDatosCompleto(){
         return "ID "+super.getId()+" Patente: "+ super.getPatente() +" marca: " + super.getMarca() + " modelo: " + super.getModelo() + " color: "+super.getColor()+" Cantidad puertas "+getCantidadPuertas();
     }
+
+    public String imprimirDato(int opcion){ 
+        if(opcion == 1){
+        return "Modelo: "+ super.getModelo();
+        }
+        if(opcion == 2){
+            return "Marca: "+ super.getMarca();
+        }
+        
+        return "Dato no valido";
+    }
 }
