@@ -40,7 +40,7 @@ public class Auto extends Vehiculo{
     @Override // Override indica que es una sobreescritura
     public String toString() {
         // hay que indicar super a los atributos del padre
-        return "Patente: "+ super.getPatente() +"marca: " + super.getMarca() + " modelo: " + super.getModelo() + " color: "+super.getColor();
+        return "Patente: "+ super.getPatente() +" marca: " + super.getMarca() + " modelo: " + super.getModelo() + " color: "+super.getColor();
     }
 
     public String imprimirDatosCompleto(){

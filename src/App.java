@@ -1,6 +1,8 @@
 import taller.Auto;
 import java.util.ArrayList;
 
+import pruebas.AutoTest;
+
 public class App {
     public static void main(String[] args) throws Exception {
 
@@ -66,5 +68,9 @@ public class App {
         System.out.println(autoUno.imprimirDato(2)); 
         System.out.println(autoUno.imprimirDato(3)); //enviamos aproposito un dato no valido
 
+        // USO DE CLASE DE PRUEBAS UNITARIAS
+        // Para probar la clase Auto, creamos una clase de pruebas unitarias
+        AutoTest pruebaClaseAuto = new AutoTest();
+        
     }
 }
