@@ -71,6 +71,6 @@ public class App {
         // USO DE CLASE DE PRUEBAS UNITARIAS
         // Para probar la clase Auto, creamos una clase de pruebas unitarias
         AutoTest pruebaClaseAuto = new AutoTest();
-        // pruebaClaseAuto.arrancar();
+        pruebaClaseAuto.CrearAuto();
     }
 }
