@@ -4,6 +4,11 @@ import taller.Auto;
 
 public class AutoTest{
 
+    // metodo constructor. Necesario para inicializar el objeto
+    public AutoTest(){
+        this.TestCrearAuto();
+    }
+
     // como buena practica declaramos un class en donde se realizaran los test unitarios
 
     // declaramos un metodo que creara los autos
@@ -28,7 +33,4 @@ public class AutoTest{
         }
     }
 
-    public AutoTest(){
-        this.TestCrearAuto();
-    }
 }
